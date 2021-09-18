@@ -1,1 +1,0 @@
-https://k3kit.github.io/rsschool-cv/cv
