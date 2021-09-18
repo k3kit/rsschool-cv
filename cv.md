@@ -4,20 +4,23 @@ ___
 * Email: Hadouken7809@gmail.com
 * Phone: +79995937889
 * Telegram: https://t.me/k3k1t
+
 ___
 ### About me
 _I like cars. I also love reading books and watching movies. I like studying. My goal is to become a developer._
 
 ___
-###Skills
+
+### Skills
  * HTML
  * CSS3
  * JS
  * C#
  * SQL
  * GIT
+
 ___
-###Sample code
+### Sample code
 
 ```
 function nicknameGenerator(name){
