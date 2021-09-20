@@ -5,136 +5,156 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/atom-one-dark.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <title>Document</title>
 </head>
 <body>
-    <header class="header">
-        <div class="wrapper">
-            <div class="header__wrapper">
-                <img class="header__photo" src="./img/0oVgmu0tAR4.jpg" alt="photo profile">
-                <div class="header__descript">
-                    <h1 class="header__title">CV</h1>
-                    <h2 class="header__subtitle"> Nikita Berezkin</h2>
-                </div>
-            </div>
-            <hr> 
-            <nav class="header__list">
-                <ul class="header__list-items">
-                    <li class="header__list-item"><a href="#Contacts">Contacts</a></li>
-                    <li class="header__list-item"><a href="#About-me">About me</a></li>
-                    <li class="header__list-item"><a href="#Skills">Skills</a></li>
-                    <li class="header__list-item"><a href="#Sample-code">Sample code</a></li>
-                    <li class="header__list-item"><a href="#Work-experience">Work experience</a></li>
-                    <li class="header__list-item"><a href="#Education">Education</a></li>
-                    <li class="header__list-item"><a href="#Language">Language</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main class="main">
-            <section class="contacts">
-                <div class="wrapper">
-                    <h3 class="section-title" id="Contacts">Contacts</h3>
-                    <ul>
-                        <li type="none">
-                          <span>Email:</span>
-                          <a  href="Hadouken7809@gmail.com">Hadouken7809@gmail.com</a>
-                        </li>
-                        <li type="none">
-                          <span>Phone:</span>
-                          <a href="tel:+79995937889">+79995937889</a>
-                        </li>
-                        <li type="none">
-                          <span>Telegram:</span>
-                          <a href="https://t.me/k3k1t" target="_blank">@K3k1t</a>
-                      </ul>
-                </div>
-            </section>
-            <section class="about-me">
-                <div class="wrapper">
-                    <h3 class="section-title" id="About-me">About me</h3>
-                    <p class="section-text"> I like cars. I also love reading books and watching movies. I like studying. My goal is to become a developer</p>
-                </div>
-            </section>
-            <section class="skills">
-                <div class="wrapper">
-                    <h3 class="section-title" id="Skills">Skills</h3>
-                <ul>
-                    <li type="none">HTML</li>
-                    <li type="none">CSS3</li>
-                    <li type="none">JS</li>
-                    <li type="none">C#</li>
-                    <li type="none">SQL</li>
-                    <li type="none">GIT</li>
-                  </ul>
-                </div>
-            </section>
-            <section class="sample-code">
-                <div class="wrapper">
-                    <h3 class="section-title" id="Sample-code">Sample code</h3>
-                    <div class="section__code">
-                        <pre class="section__code-pre">
-                            <code class="section__code-text">
-                                function nicknameGenerator(name){
-                                    if(name.length < 4){
-                                      return "Error: Name too short"
-                                    }else if('aeiou'.indexOf(name[2].toLowerCase())!=-1){
-                                      return name.slice(0,4)
-                                    }else{
-                                      return name.slice(0,3)
-                                    }
-                                  }
-                            </code>
-                        </pre>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__body">
+                    <img class="header__photo" src='./img/rs_school_js.svg' alt="photo profile">
+                    <h2 class="header__logo">Curriculum vitae</h2>
+                    <div class="header__burger">
+                        <span></span>
                     </div>
-                </div>
-            </section>
-            <section class="work">
-                <div class="wrapper"><h3 class="section-title" id="Work-experience"> Work experience</h3>
-                <p class="section__text">Nothing yet…</p></div>
-            </section>
-            <section class="Education">
-                <div class="wrapper">
-                    <h3 class="section-title" id="Education">Education</h3>
-                <ul>
-                    <li>Institute
-                        <ul>
-                            <li> September 2015 -July 2020,Saratov Socio-Economic Institute, Economic security.</li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        Training
-                        <ul>
-                            <li>
-                                .NET web devolopment training EPAM
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <li class="header__link">
+                                <a data-goto=".page__section_1" class="menu__link" href="#">Contacts</a></li>
+                            <li class="header__link">
+                                <a  data-goto=".page__section_2" class="menu__link" href="#">About me</a>
+                            </li>
+                            <li class="header__link">
+                                <a  data-goto=".page__section_3"  class="menu__link" href="#">Skills</a>
+                            </li>
+                            <li class="header__link">
+                                <a  data-goto=".page__section_4" class="menu__link" href="#">Sample code</a>
+                            </li>
+                            <li class="header__link">
+                                <a  data-goto=".page__section_5"  class="menu__link" href="#">Work experience</a>
+                            </li>
+                            <li class="header__link">
+                                <a  data-goto=".page__section_6"   class="menu__link"href="#">Education</a>
+                            </li>
+                            <li class="header__link">
+                                <a  data-goto=".page__section_7"  class="menu__link" href="#">Language</a>
                             </li>
                         </ul>
-                    </li>
-                </ul>
+                    </nav>
                 </div>
-                
-            </section>
-            <section class="language">
-                <div class="wrapper">
-                <h3 class="section-title" id="Language">English</h3>
-                <p class="section-text">A2</p></div>
+            </div>
+        </header>
+    </div>
+    <main class="main">
+        <div class="container">
+        <section class="page__section page__section_1">
+            <div class="contact">
+                <img  class='contact__photo'src="./img/0oVgmu0tAR4.jpg" alt="photo profile">
+                <h4 class="section-title">Nikita Berezkin</h4>
+            </div>
+                <h3 class="section-title" id="Contacts">Contacts</h3>
+                <ul class="page__section-contact">
+                    <li class="section__li">
+                      <span>Email:</span>
+                      <a  href="Hadouken7809@gmail.com">Hadouken7809@gmail.com</a>
+                    </li>
+                    <li class="section__li">
+                      <span>Phone:</span>
+                      <a href="tel:+79995937889">+79995937889</a>
+                    </li>
+                    <li class="section__li">
+                      <span>Telegram:</span>
+                      <a href="https://t.me/k3k1t" target="_blank">@K3k1t</a>
+                  </ul>
+            
+        </section>
+        <section class="page__section page__section_2">
+        
+                <h3 class="section-title" id="About-me">About me</h3>
+                <p class="section-text">I like cars. I also love reading books and watching movies. I like studying. My goal is to become a developer.
+                </p>
+          
+        </section>
+        <section class="page__section page__section_3">
+            
+                <h3 class="section-title" id="Skills">Skills</h3>
+            <ul>
+                <li class="section__li">HTML</li>
+                <li  class="section__li">CSS3</li>
+                <li  class="section__li">JS</li>
+                <li  class="section__li">C#</li>
+                <li  class="section__li">SQL</li>
+                <li  class="section__li">GIT</li>
+              </ul>
+    
+        </section>
+        <section class="page__section page__section_4">
+           
+                <h3 class="section-title" id="Sample-code">Sample code</h3>
+                <div class="section__code">
+                    <pre class='section__code-pre'>
+                        <code >
+                            function nicknameGenerator(name){
+                                if(name.length < 4){
+                                  return "Error: Name too short"
+                                }else if('aeiou'.indexOf(name[2].toLowerCase())!=-1){
+                                  return name.slice(0,4)
+                                }else{
+                                  return name.slice(0,3)
+                                }
+                              }
+                        </code>
+                    </pre>
+                </div>
+          
+        </section>
+        <section class="page__section page__section_5">
+            <h3 class="section-title" id="Work-experience"> Work experience</h3>
+            <p class="section__text">Nothing yet…  </p>
+        </section>
+        <section class="page__section page__section_6">
+          
+                <h3 class="section-title" id="Education">Education</h3>
+            <ul>
+                <li>
+                    <h3 class="title__education">Institute</h3>
+                    <ul>
+                        <li  class="section__li"> September 2015 -July 2020,Saratov Socio-Economic Institute, Economic security.</li>
+                    </ul>
+                </li>
 
-            </section>
+                <li>
+                    <h3 class="title__education">Training</h3>
+                    <ul>
+                        <li  class="section__li">.NET web devolopment training EPAM</li>
+                    </ul>
+                </li>
+            </ul>
+         
+            
+        </section>
+        <section class="page__section page__section_7">
+            
+            <h3 class="section-title" id="Language">English</h3>
+            <p class="section-text">A2</p>
+        </section>
+        </div>
     </main>
-
     <footer class="footer">
         <div class="wrapper">
             <div class="footer__wrap">
                 <img class="footer__logo" src="./img/rs_school_js.svg" alt="logo">
-                <h2><a href="https://rs.school/js/">The Rolling Scopes</a></h2>
-                
+                <h2><a href="https://rs.school/js/">The Rolling Scopes</a></h2>    
             </div>
-            
-
         </div>
-
     </footer>
+
+    <script src="./script/script.js"></script>
 </body>
 </html>
